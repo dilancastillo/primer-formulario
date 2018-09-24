@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PRIMER FORMULARIO</title>
+	<link rel="stylesheet" type="text/css" href="css/primerformulario.css">
+</head>
+<body>
+	<h1>Formulario feedback</h1>
+	<form>
+		Nombre:<input type="text" name="name" id="name" value=""  />
+		Email: <input type="text" name="email"  id="email"  value="" />
+		Comentarios: <textarea name="comments" id="comments" cols="25"  rows="3"></textarea>
+		<input type="submit" value="Guardar"  />
+	</form>
+
+
+	<form id="contact-form" action="http://devfiles.myopera.com/articles/409/script.php" method="post">
+		<input type="hidden" name="redirect" value="http://www.opera.com"  />
+		<ul>
+			<li>
+				<label for="name">Nombre:</label>
+				<input type="text" name="name" id="name" placeholder="Ingrese su nombre" value="" required   />
+			</li>
+			<li>
+				<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="Ingrese su email" id="email" value=""   />
+			</li>
+			<li>
+				<label for="password">Password:</label>
+				<input type="password" name="password" placeholder="Ingrese su password" id="password" value=""  />
+			</li>
+			<li>
+				<label for="comments">Comentarios:</label>
+				<textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+			</li>
+			<li>
+				<input type="submit" value="Guardar"  />
+				<input type="reset" value="Volver"   />
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

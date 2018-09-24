@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORMULARIO TRES</title>
+	<link rel="stylesheet" type="text/css" href="css/formulariotres.css">
+</head>
+<body>
+	<h1>Contactenos</h1>
+	<form id="contact-form" action="http://devfiles.myopera.com/articles/409/script.php" method="post">
+		<input type="hidden" name="redirect" value="http://www.opera.com"  />
+		<ul>
+			<li>
+				<label for="name">Nombre:</label>
+				<input type="text" name="name" id="name" value="" placeholder="Ingrese su  nombre" required  />
+			</li>
+			<li>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="password" value="" placeholder="Ingrese su  nombre"   />
+			</li>
+
+			<fieldset>
+				<legend>Tipo de cuenta</legend>
+				<ul>
+					<li><label for="gold">Gold</label>
+					<input type="checkbox" name="gold" id="gold" value="gold" checked="checked"></li>
+					<li><label for="platinum">Platino</label>
+					<input type="checkbox" name="platinum" id="platinum" value="platinum"></li>
+					<li><label for="general">General</label>
+					<input type="checkbox" name="general" id="general" value="general"></li>
+					<li><label for="none">None</label>
+						<input type="checkbox" name="none" id="none" value="none"></li>
+				</ul>
+			</fieldset>
+
+			
+
+			
+		
+
+			<li>	
+						<label for="name">Clase de soporte</label>
+						<select name="name" id="name">
+							<option value="">Online</option>
+							<option value="medellin">Online</option>
+							<option value="santamarta">En sitio</option>
+							<option value="cartagena">Via telefonica</option>
+							<option value="armenia">Otros</option>
+						
+						</select>
+					</li>
+					<li>
+			<label for="account">Mi cuenta es unica</label>
+			<input type="radio" name="account" id="account" value="account">
+		</li>
+			<li>
+				<label for="comments">Comentarios:</label>
+				<textarea  name="comments"   id="comments" cols="25" rows="3">  </textarea>
+			</li>
+			<li>
+				<input type="submit" value="Guardar"  />
+				<input type="reset" value="Volver"   />
+			</li>
+		</ul>
+
+		
+		</ul>
+	</form>
+</body>
+</html>
